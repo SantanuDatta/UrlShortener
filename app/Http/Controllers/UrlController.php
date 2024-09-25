@@ -49,7 +49,7 @@ class UrlController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Url $url)
+    public function update(UrlRequest $request, Url $url)
     {
         $updateUrl = $request->validated();
         $updateUrl['shorten_url'] = Str::random(7);

@@ -64,10 +64,8 @@
                                                             href="{{ route('url.edit', $url) }}">Edit</a>
                                                         <form method="POST" action="{{ route('url.destroy', $url) }}">
                                                             @csrf
-                                                            @method('delete')
-                                                            <a href="{{ route('url.destroy', $url) }}" class="text-red-500">
-                                                                {{ __('Delete') }}
-                                                            </a>
+                                                            @method('DELETE')
+                                                            <button type="submit" class="text-red-500">Delete</button>
                                                         </form>
                                                     </div>
                                                 </td>
