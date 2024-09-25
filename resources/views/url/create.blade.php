@@ -22,7 +22,10 @@
                 placeholder="{{ __('Valid Url') }}"
             />
             <x-input-error class="mt-2" :messages="$errors->store->get('original_url')" />
-            <x-primary-button class="mt-4">{{ __('Save') }}</x-primary-button>
+            <div class="mt-4 flex items-center justify-between">
+                <a href="{{ route('url.index') }}">{{ __('Cancel') }}</a>
+                <x-primary-button>{{ __('Save') }}</x-primary-button>
+            </div>
         </form>
     </div>
 </x-app-layout>

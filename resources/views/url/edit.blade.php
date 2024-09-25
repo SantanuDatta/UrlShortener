@@ -25,7 +25,7 @@
             <x-input-error class="mt-2" :messages="$errors->store->get('original_url')" />
             <div class="mt-4 flex items-center justify-between">
                 <a href="{{ route('url.index') }}">{{ __('Cancel') }}</a>
-                <x-primary-button>{{ __('Save') }}</x-primary-button>
+                <x-primary-button>{{ __('Update') }}</x-primary-button>
             </div>
         </form>
     </div>
